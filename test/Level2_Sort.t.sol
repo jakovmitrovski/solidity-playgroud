@@ -14,7 +14,7 @@ contract Level_2_SortTest is Test {
         c = new Level_2_Sort();
     }
 
-    function testSolution() public {
+    function testSolution() public view {
         uint256[10] memory x = [
             uint256(5),
             uint256(4),
