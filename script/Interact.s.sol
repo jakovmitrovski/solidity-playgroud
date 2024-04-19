@@ -9,9 +9,9 @@ contract InteractScript is Script {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
         // vm.startBroadcast();
-        SendToken sendToken = SendToken(payable(0x63150B9af349441ecCb34e580E97bB184f149A78));
-        sendToken.send(12.5 * 10 ** 6);
-        // sendToken.withdraw();
+        SendToken sendToken = SendToken(payable(0xd2d59276bB0FE9b575baD691E3CE7147f5590fe7));
+        // sendToken.send(12.5 * 10 ** 6);
+        sendToken.withdraw();
 
         vm.stopBroadcast();
     }
